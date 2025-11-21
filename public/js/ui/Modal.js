@@ -12,7 +12,14 @@ class Modal {
    * необходимо выкинуть ошибку.
    * */
   constructor(element){
+    if(!element) {
+        throw new Error("несуществующее окно");
+    }
+  
+    this.element = element;
+    this.errMessage = element.querySelector('.modal-error');
 
+    this.registerEvents();
   }
 
   /**
@@ -21,7 +28,10 @@ class Modal {
    * (с помощью метода Modal.onClose)
    * */
   registerEvents() {
-
+    const closers = this.element.querySelectorAll('[data-dismiss="modal"]');
+    for (let i = 0; i < closers.length; i++) {
+      closers[i].onclick = (e) => {this.onClose(e)};
+    }
   }
 
   /**
@@ -29,19 +39,34 @@ class Modal {
    * Закрывает текущее окно (Modal.close())
    * */
   onClose(e) {
-
+    this.clearError()
+    this.close();
   }
   /**
    * Открывает окно: устанавливает CSS-свойство display
    * со значением «block»
    * */
   open() {
-
+    this.element.style.display = "block";
   }
   /**
    * Закрывает окно: удаляет CSS-свойство display
    * */
   close(){
-
+    this.element.style.display = "none";
+  }
+  /**
+   * Выставляет сообщение об ошибке в модальном окне
+   * */
+  setError(error) {
+    this.errMessage.innerText = error;
+    this.errMessage.style.display = "block";
+  }
+  /**
+   * Снимает сообщение об ошибке в модальном окне
+   * */
+  clearError() {
+    this.errMessage.innerText = "";
+    this.errMessage.style.display = "none";
   }
 }

@@ -1,0 +1,235 @@
+{
+  "users": [
+    {
+      "name": "demo",
+      "email": "demo@demo",
+      "password": "demo",
+      "id": "1"
+    },
+    {
+      "name": "Оксана",
+      "email": "oksana@demo.ru",
+      "password": "123",
+      "id": "1aoh2s4mi7qencr"
+    }
+  ],
+  "accounts": [
+    {
+      "name": "Банк",
+      "user_id": "1",
+      "id": "1"
+    },
+    {
+      "name": "Магазин",
+      "user_id": "1",
+      "id": "2"
+    },
+    {
+      "name": "Бизнес",
+      "user_id": "1",
+      "id": "3"
+    },
+    {
+      "name": "Такси \"Довезу до зарплаты\"",
+      "user_id": "1aoh2s4mi7qencr",
+      "id": "1aohc3omi7trhqb"
+    },
+    {
+      "name": "Заначка на \"Я же говорила\"",
+      "user_id": "1aoh2s4mi7qencr",
+      "id": "1aohc5wmi7ttrzc"
+    },
+    {
+      "name": "Фонд \"А оно мне надо\"",
+      "user_id": "1aoh2s4mi7qencr",
+      "id": "1aohd98mi7uwuvk"
+    },
+    {
+      "name": "Хрустящий резерв",
+      "user_id": "1aoh2s4mi7qencr",
+      "id": "1aohe2omi7vwc18"
+    }
+  ],
+  "transactions": [
+    {
+      "account_id": "1",
+      "created_at": "2019-09-15 10:24:02",
+      "id": "1",
+      "name": "Кредит",
+      "sum": 5000,
+      "type": "expense",
+      "user_id": "1"
+    },
+    {
+      "account_id": "1",
+      "created_at": "2019-09-17 15:53:02",
+      "id": "2",
+      "name": "Баланс на дебетовке",
+      "sum": 3200,
+      "type": "income",
+      "user_id": "1"
+    },
+    {
+      "account_id": "1",
+      "created_at": "2019-09-19 20:12:02",
+      "id": "3",
+      "name": "Копилка",
+      "sum": 1500,
+      "type": "income",
+      "user_id": "1"
+    },
+    {
+      "account_id": "2",
+      "created_at": "2019-09-26 16:23:02",
+      "id": "4",
+      "name": "Молочные продукты",
+      "sum": 100,
+      "type": "income",
+      "user_id": "1"
+    },
+    {
+      "account_id": "2",
+      "created_at": "2019-09-25 15:03:02",
+      "id": "5",
+      "name": "Фрукты",
+      "sum": 250,
+      "type": "income",
+      "user_id": "1"
+    },
+    {
+      "account_id": "2",
+      "created_at": "2019-09-25 15:03:02",
+      "id": "17",
+      "name": "Овощи",
+      "sum": 300,
+      "type": "income",
+      "user_id": "1"
+    },
+    {
+      "account_id": "2",
+      "created_at": "2019-09-26 14:47:02",
+      "id": "6",
+      "name": "Мясо",
+      "sum": 600,
+      "type": "income",
+      "user_id": "1"
+    },
+    {
+      "account_id": "2",
+      "created_at": "2019-09-27 13:27:02",
+      "id": "7",
+      "name": "Долг в банк",
+      "sum": 5000,
+      "type": "expense",
+      "user_id": "1"
+    },
+    {
+      "account_id": "3",
+      "created_at": "2017-10-15 13:27:02",
+      "id": "9",
+      "name": "На банду",
+      "sum": 15000,
+      "type": "expense",
+      "user_id": "1"
+    },
+    {
+      "account_id": "3",
+      "created_at": "2017-09-17 13:27:02",
+      "id": "10",
+      "name": "На стволы",
+      "sum": 6000,
+      "type": "expense",
+      "user_id": "1"
+    },
+    {
+      "account_id": "3",
+      "created_at": "2017-12-27 13:27:02",
+      "id": "11",
+      "name": "Прибыль с банка",
+      "sum": 1500000,
+      "type": "income",
+      "user_id": "1"
+    },
+    {
+      "account_id": "3",
+      "created_at": "2018-01-15 13:27:02",
+      "id": "12",
+      "name": "Прибыль с магазина",
+      "sum": 300000,
+      "type": "income",
+      "user_id": "1"
+    },
+    {
+      "account_id": "3",
+      "created_at": "2018-01-15 13:27:02",
+      "id": "13",
+      "name": "Подарок сизого",
+      "sum": 20000,
+      "type": "income",
+      "user_id": "1"
+    },
+    {
+      "account_id": "3",
+      "created_at": "2017-09-15 13:27:02",
+      "id": "14",
+      "name": "На охрану",
+      "sum": 60000,
+      "type": "expense",
+      "user_id": "1"
+    },
+    {
+      "account_id": "3",
+      "created_at": "2017-10-15 13:27:02",
+      "id": "15",
+      "name": "На бумер",
+      "sum": 300000,
+      "type": "expense",
+      "user_id": "1"
+    },
+    {
+      "id": "1aohbmomi8nekqq",
+      "type": "income",
+      "name": "Королева Драмы вернула",
+      "sum": 1000,
+      "account_id": "1aohc3omi7trhqb",
+      "user_id": "1aoh2s4mi7qencr",
+      "created_at": "2025-11-21T09:18:52.801Z"
+    },
+    {
+      "id": "1aohf24mi8okyya",
+      "type": "income",
+      "name": "Хомяк нервничает",
+      "sum": 25000,
+      "account_id": "1aohc5wmi7ttrzc",
+      "user_id": "1aoh2s4mi7qencr",
+      "created_at": "2025-11-21T09:51:50.769Z"
+    },
+    {
+      "id": "1aoh2bwmi8oq8v9",
+      "type": "income",
+      "name": "Хомяк спокоен",
+      "sum": 1000,
+      "account_id": "1aohc5wmi7ttrzc",
+      "user_id": "1aoh2s4mi7qencr",
+      "created_at": "2025-11-21T09:55:56.900Z"
+    },
+    {
+      "id": "1aohf8gmi8po33u",
+      "type": "expense",
+      "name": "На зубы Алине",
+      "sum": 5000,
+      "account_id": "1aohc3omi7trhqb",
+      "user_id": "1aoh2s4mi7qencr",
+      "created_at": "2025-11-21T10:22:15.737Z"
+    },
+    {
+      "id": "1aoh520mi8rsj3p",
+      "type": "expense",
+      "name": "Хомяк кайфует",
+      "sum": 3000,
+      "account_id": "1aohc5wmi7ttrzc",
+      "user_id": "1aoh2s4mi7qencr",
+      "created_at": "2025-11-21T11:21:42.324Z"
+    }
+  ]
+}

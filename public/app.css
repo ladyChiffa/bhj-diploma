@@ -80,3 +80,8 @@
 .transaction__controls {
   line-height: 70px;
 }
+
+.modal-error {
+  color:red;
+  display:none;
+}
